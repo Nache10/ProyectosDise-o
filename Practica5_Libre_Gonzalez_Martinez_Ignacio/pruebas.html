@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/kids.css">
+    <link rel='stylesheet' href='css/swiper2.min.css'> <!-- swipper -->
+    <style>
+    #panel{
+        height: 600px;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div id="panel">
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide libro l1p1"></div>
+              <div class="swiper-slide libro l1p2"></div>
+              <div class="swiper-slide libro l1p3"></div>
+              <div class="swiper-slide libro l1p4"></div>
+              <div class="swiper-slide libro l1p5"></div>
+              <div class="swiper-slide libro l1p6"></div>
+              <div class="swiper-slide libro l1p7"></div>
+              <div class="swiper-slide libro l1p8"></div>
+              <div class="swiper-slide libro l1p9"></div>
+              <div class="swiper-slide libro l1p10"></div>
+              <div class="swiper-slide libro l1p11"></div>
+              <div class="swiper-slide libro l1p12"></div>
+              <div class="swiper-slide libro l1p13"></div>
+              <div class="swiper-slide libro l1p14"></div>
+              <div class="swiper-slide libro l1p15"></div>
+              <div class="swiper-slide libro l1p16"></div>
+              <div class="swiper-slide libro l1p17"></div>
+              <div class="swiper-slide libro l1p18"></div>
+              <div class="swiper-slide libro l1p19"></div>
+              <div class="swiper-slide libro l1p20"></div>
+            </div>
+          </div>
+          <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide libro l1p1"></div>
+              <div class="swiper-slide libro l1p2"></div>
+              <div class="swiper-slide libro l1p3"></div>
+              <div class="swiper-slide libro l1p4"></div>
+              <div class="swiper-slide libro l1p5"></div>
+              <div class="swiper-slide libro l1p6"></div>
+              <div class="swiper-slide libro l1p7"></div>
+              <div class="swiper-slide libro l1p8"></div>
+              <div class="swiper-slide libro l1p9"></div>
+              <div class="swiper-slide libro l1p10"></div>
+              <div class="swiper-slide libro l1p11"></div>
+              <div class="swiper-slide libro l1p12"></div>
+              <div class="swiper-slide libro l1p12"></div>
+              <div class="swiper-slide libro l1p13"></div>
+              <div class="swiper-slide libro l1p14"></div>
+              <div class="swiper-slide libro l1p15"></div>
+              <div class="swiper-slide libro l1p16"></div>
+              <div class="swiper-slide libro l1p17"></div>
+              <div class="swiper-slide libro l1p18"></div>
+              <div class="swiper-slide libro l1p19"></div>
+              <div class="swiper-slide libro l1p20"></div>
+            </div>
+          </div>
+    </div>
+</body>
+<script src='js/swiper2.min.js'></script>
+
+<script>
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+</script>
+</html>

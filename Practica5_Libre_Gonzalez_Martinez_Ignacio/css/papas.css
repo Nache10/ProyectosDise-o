@@ -1,0 +1,302 @@
+
+/* Inicio apuntes */
+.apuntes{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+}
+.apuntes-title{
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 50px 0px;
+}
+.apuntes-title h2{
+    font-family: 'Bang';
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 3px black;
+    color: #65077F;
+    font-size: 85px;
+    margin-top: 30px;
+}
+.apuntes-contenido{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.apcaja{
+    width: 25%;
+    margin:2%;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: #65077F;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.apcaja:hover{
+    cursor: pointer;
+}
+.curso{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.curso h5{
+    color: white;
+    margin-right: 10px;
+    text-shadow: 2px 2px black;
+    transition: .6s;
+}
+.curso h5:hover{
+    text-decoration: underline;
+}
+.mates{
+    background-color: #65077F;  
+    background-image: url(../img/kids/mat2.png);
+}
+.ciencias{
+    background-color: #1c8554;
+    background-image: url(../img/kids/sci.png);
+}
+.edfisica{
+    background-color: #ee6e2e;
+    background-image: url(../img/kids/dep.png);
+}
+.historia{
+    background-color: #cead08;
+    background-image: url(../img/kids/his.png);
+}
+.geografia{
+    background-color: #00BAE7;
+    background-image: url(../img/kids/geo.png);
+}
+.lengua{
+    background-color: #162265;
+    background-image: url(../img/papas/len.png);
+    background-size: cover;
+}
+.apcaja h4{
+    color: white;
+    font-family: 'Bang';
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 3px black;
+    font-size: 48px;
+}
+/* fin de apuntes */
+/* medias apuntes */
+@media all and (max-width:1400px){
+    .apcaja{
+        background-size: cover;
+    }
+}
+@media all and (max-width:1200px){
+    .apcaja{
+        width: 40%;
+    }
+}
+@media all and (max-width:850px){
+    .apuntes-title h2{
+        font-size:70px;
+    }
+}
+@media all and (max-width:780px){
+    .apcaja{
+        width: 80%;
+    }
+}
+@media all and (max-width:650px){
+    .apuntes-title h2{
+        font-size:54px;
+    }
+}
+/* fin de medias de apuntes */
+/* inicio de videos */
+.videos{
+background-color: #00BAE7;
+height: auto;
+width: 100%;
+padding-bottom: 100px;
+
+}
+.videos-title{
+    height: 100px;
+    width: 60%;
+    margin: auto;
+    background-color: #65077F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+}
+.videos-title h2{
+    font-family: 'Bang';
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 3px black;
+    color: white;
+    font-size: 65px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.videos-main{
+    width: 70%;
+    height: 500px;
+    margin:auto;
+    background-color: black;
+}
+.videos-selector{
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.video{
+    height: 250px;
+    width: 25%;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.video:hover{
+    cursor: pointer;
+}
+.vid1{
+    background-image: url(../img/papas/vid1.jpg);
+}
+.vid2{
+    background-image: url(../img/papas/vid2.jpg);
+}
+.vid3{
+    background-image: url(../img/papas/vid3.jpg);
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+/* fin de videos */
+/* medias para videos */
+@media all and (max-width:1300px){
+    .videos-title h2{
+        font-size: 350%;
+    }
+}
+@media all and (max-width:1200px){
+    .videos-main, .videos-selector{
+        width: 90%;
+    }
+}
+@media all and (max-width:1000px){
+    .videos-title h2{
+        font-size: 300%;
+    }
+}
+@media all and (max-width:850px){
+    .videos-title h2{
+        font-size: 250%;
+    }
+    .videos-main , .videos-selector{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .video{
+        width: 60%;
+        margin-right: 6%;
+        margin-left:6%;
+        margin-bottom: 40px;
+    }
+    .videos{
+        padding-bottom: 50px;
+    }
+}
+@media all and (max-width:700px){
+    .videos-title{
+        width: 90%;
+    }
+    .videos-title h2{
+        font-size: 200%;
+    }
+}
+@media all and (max-width:600px){
+    .video{
+        width: 80%;
+        padding-bottom: 0px;
+    }
+}
+/* fin demedias para videos */
+/* arreglo para las tarjetas y el color de fondo */
+.precio{
+    background-color: #00BAE7;
+}
+.precio-item{
+    border: 2px solid #00BAE7;
+}
+/* inicio dudas */
+.dudas{
+    background: url(../img/papas/dudas.jpg);
+    background-position: center bottom;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.faq-contact{
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+    /* background-color: rgba(255,255,255,0.5); */
+    margin-top: 100px;
+    width: 35%;
+}
+.gordito{
+    color: white;
+    margin-bottom: 50px;
+}
+input[type="submit"]{
+    color: black;
+    background-color: white;
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: 50%;
+}
+input[type="submit"]:hover{
+    border: 2px solid white;
+}
+/* fin de dudas */
+/* medias para dudas */
+@media all and (max-width:1200px){
+    .faq-contact{
+        width: 70%;
+    }
+    .faq-contact .gordito{
+        font-size:250%;
+    }
+}
+/* arreglo footer */
+footer{
+    background-image: url('../img/papas/footer.jpg');
+    margin-top: 0;
+}

@@ -1,0 +1,615 @@
+.cuentos{
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    margin-bottom: 150px;
+    position: relative;
+
+}
+.cuentos-wrapper{
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+}
+.cuentos-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.gordito{
+    font-size: 450%;
+    -webkit-text-stroke: 2px #65077F;
+    margin-bottom: -70px;
+}
+.cuentos-libro{
+    box-sizing: border-box;
+    height:800px;
+}
+.cuentos-libro:hover{
+    cursor: pointer;
+}
+
+/* Inicializacion swiper */
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+  .gallery-top {
+    height: 80%;
+    width: 100%;
+  }
+  .gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+  .gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+  .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  .main_swipper{
+      box-sizing: border-box;
+      /* border: 1px solid black; */
+      height: 800px;
+  }
+  .slide1prin{
+      display: block;
+  }
+  /* Fin inicializacion */
+/* Libros y sus paginas */
+.libro{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center ;
+    box-sizing: border-box;
+}
+.l1p1{
+    background-image: url('../img/cuentos/gorg/p1.jpg');
+}
+.l1p2{
+    background-image: url('../img/cuentos/gorg/p2.jpg');
+}
+.l1p3{
+    background-image: url('../img/cuentos/gorg/p3.jpg');
+}
+.l1p4{
+    background-image: url('../img/cuentos/gorg/p4.jpg');
+}
+.l1p5{
+    background-image: url('../img/cuentos/gorg/p5.jpg');
+}
+.l1p6{
+    background-image: url('../img/cuentos/gorg/p6.jpg');
+}
+.l1p7{
+    background-image: url('../img/cuentos/gorg/p7.jpg');
+}
+.l1p8{
+    background-image: url('../img/cuentos/gorg/p8.jpg');
+}
+.l1p9{
+    background-image: url('../img/cuentos/gorg/p9.jpg');
+}
+.l1p10{
+    background-image: url('../img/cuentos/gorg/p10.jpg');
+}
+.l1p11{
+    background-image: url('../img/cuentos/gorg/p11.jpg');
+}
+.l1p12{
+    background-image: url('../img/cuentos/gorg/p12.jpg');
+}
+.l1p13{
+    background-image: url('../img/cuentos/gorg/p13.jpg');
+}
+.l1p14{
+    background-image: url('../img/cuentos/gorg/p14.jpg');
+}
+.l1p15{
+    background-image: url('../img/cuentos/gorg/p15.jpg');
+}
+.l1p16{
+    background-image: url('../img/cuentos/gorg/p16.jpg');
+}
+.l1p17{
+    background-image: url('../img/cuentos/gorg/p17.jpg');
+}
+.l1p18{
+    background-image: url('../img/cuentos/gorg/p18.jpg');
+}
+.l1p19{
+    background-image: url('../img/cuentos/gorg/p19.jpg');
+}
+.l1p20{
+    background-image: url('../img/cuentos/gorg/p20.jpg');
+}
+.l2p1{
+    background-image: url('../img/cuentos/robot/p1.jpg');
+}
+.l3p1{
+    background-image: url('../img/cuentos/pulpo/p1.jpg');
+}
+.l4p1{
+    background-image: url('../img/cuentos/tintin/p1.jpg');
+}
+.l5p1{
+    background-image: url('../img/cuentos/gallopato/p1.jpg');
+}
+.l6p1{
+    background-image: url('../img/cuentos/dragon/p1.jpg');
+}
+/* medias para antes del banner */
+@media all and (max-width:950px){
+    .cuentos{
+        height: 500px;
+    }
+    .gallery-top{
+        height: 400px;
+    }
+}
+@media all and (max-width:750px){
+    .gordito{
+        font-size: 350%;
+    }
+}
+@media all and (max-width:600px){
+    .gallery-top{
+        height: 300px;
+    }
+}
+@media all and (max-width:570px){
+    .gordito{
+        font-size: 250%;
+    }
+}
+/* fin medias para antes del banner */
+/* Cuentos tipo blog */
+.cuentos-blog{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-image: url(../img/kids/cuentosbg.png);
+    background-position: bottom right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #00BAE7;
+}
+.cuentos-blog-wrapper{
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.cuentos-blog-cuento{
+    width: 30%;
+    box-sizing: border-box;
+    /* border: 1px solid pink; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.cuento-foto{
+    width: 100%;
+    height: 300px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.cuento-foto:hover{
+    cursor: pointer;
+}
+.gorg{
+    background-image: url(../img/cuentos/gorg/p1.jpg);
+}
+.robot{
+    background-image: url(../img/cuentos/robot/p1.jpg);
+}
+.pulpo{
+    background-image: url(../img/cuentos/pulpo/p1.jpg);
+}
+.tintin{
+    background-image: url(../img/cuentos/tintin/p1.jpg);
+}
+.dragon{
+    background-image: url(../img/cuentos/dragon/p1.jpg);
+}
+.gallopato{
+    background-image: url(../img/cuentos/gallopato/p1.jpg);
+}
+
+.cuento-botones{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+a:hover{
+    cursor: pointer;
+}
+.cuento-botones h3 a{
+    color: white;
+    font-size: 80%;
+}
+.cuento-botones h3 a:hover{
+    text-shadow: 2px 2px 2px black;
+}
+/* cambio banner */
+.banner{
+    background-image: url(../img/kids/banner1.png);
+}
+/* fin cambio banner */
+/* mediaspara blogcuentos */
+@media all and (max-width:1500px){
+    .cuento-botones{
+        height: 50px;
+        padding-top: 0px;
+    }
+}
+@media all and (max-width:1200px){
+    .cuento-foto{
+        height: 200px;
+    }
+}
+@media all and (max-width:1000px){
+    .cuentos-blog-cuento{
+        width: 48%;
+    }
+}
+@media all and (max-width:800px){
+    .cuentos-blog-cuento{
+        width: 80%;
+    }
+    .cuento-foto{
+        height: 250px;
+    }
+    .salir{
+        right: 0;
+    }
+}
+/* finde medias para blog cuentos */
+/* INICIO DE ADIVINANZAS */
+.adivinanzas{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/kids/adibg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+.adivinanzas-title{
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 50px 0px;
+}
+.adivinanzas-title h2{
+    font-family: 'Bang';
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 3px black;
+    color: white;
+    font-size: 85px;
+    margin-top: 30px;
+}
+.adivinanzas-core{
+    width: 80%;
+    height: 500px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.core1{
+    margin-left: 0;
+}
+.core2{
+    margin-left: 20%;
+    margin-bottom: 80px;
+}
+.adivinanza{
+    width: 20%;
+    background-color: #65077F;
+    height: 350px;
+    position: relative;
+    transition: 1s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.adivinanza:hover{
+    cursor: pointer;
+}
+.ad1, .adr1, .ad8, .adr8{
+    background-color: #65077F;  
+    background-image: url(../img/kids/mat2.png);
+}
+
+.ad2, .adr2, .ad7, .adr7{
+    background-color: #04D976;
+    background-image: url(../img/kids/sci.png);
+
+}
+.ad3, .adr3, .ad5, .adr5{
+    background-color: #00BAE7;
+    background-image: url(../img/kids/geo.png);
+}
+.ad4, .adr4{
+    background-color: #F2CB07;
+    background-image: url(../img/kids/his.png);
+}
+.ad6, .adr6{
+    background-color: #ee6e2e;
+    background-image: url(../img/kids/dep.png);
+}
+
+.flipped{
+    transform: rotateY(180deg);
+}
+.ad-texto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    z-index: 2;
+}
+.ad-respuesta{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.ad-respuesta p, .ad-overlay p{
+    font-weight: 800;
+    font-size: 120%;
+    text-shadow:1px 1px 2px black;
+    text-align: center;
+}
+.encima{
+    z-index: 3;
+}
+.none{
+    display: none;
+}
+.visible{
+    display: flex;
+    transform: rotateY(180deg);
+}
+.ad-overlay{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/* fin de adivinanzas */
+/* focus de libro*/
+.cuentosfocus{
+    background: #65077F;
+    width: 100%;
+    height: 100%;
+}
+.salir{
+    display: none;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50;
+    right: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.salir:hover{
+    cursor: pointer;
+}
+.fa-times{
+    color: white;
+}
+/* fin focus de libro */
+
+/* Seccion de juegos */
+.juegos{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.juegos-title{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.juegos-title h2{
+    font-family: 'Bang';
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 3px black;
+    color: #65077F;
+    font-size: 85px;
+    margin-top: 30px;
+}
+.juegos-swiper{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.swiper-container-juegos {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide-juegos {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+  }
+  .swiper-slide-juegos h3{
+      color: white;
+      font-size:50px
+  }
+  .swiper-slide-juegos p{
+      width: 50%;
+  }
+  .swiper-slide-juegos:hover{
+      cursor: grab;
+  }
+  .swiper-slide-juegos:active{
+      cursor: grabbing;
+  }
+  .ss1{
+    background-image: url('../img/kids/ss1.jpg');
+  }
+  .ss2{
+    background-image: url('../img/kids/ss2.jpg');
+  }
+  .ss3{
+      background-image: url('../img/kids/ss3.jpg');}
+  .swiper-button-next:after, .swiper-button-prev:after {
+      color: white;
+      text-shadow: 3px 3px 3px black;
+  }
+  .swiper-button-next:after {
+      margin-right: 50px;
+  }
+  .swiper-button-prev:after{
+      margin-left: 50px;
+  }
+  footer{
+      background-image: url(../img/kids/footershape.png);
+  }
+/* Fin de seccion de juegos */
+footer{
+    margin-top: 0px;
+}
+
+/* ultimas medias */
+@media all and (max-width:1300px){
+    .core1, .core2{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 400px;
+    }
+    .core2{
+        margin-bottom: 150px;
+    }
+}
+@media all and (max-width:1000px){
+    .core1, .core2{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 800px;
+    }
+    .adivinanza{
+        width: 40%;
+    }
+}
+@media all and (max-width:900px){
+    .adivinanzas-title h2{
+        font-size: 72px;
+    }
+}
+@media all and (max-width:800px){
+    .salir{
+        right: 0;
+    }
+}
+@media all and (max-width:750px){
+    .juegos-title h2{
+        font-size: 65px;
+    }
+}
+@media all and (max-width:700px){
+    .core1, .core2{
+        height: 1600px;
+    }
+    .adivinanza{
+        width: 80%;
+    }
+}
+@media all and (max-width:650px){
+    .adivinanzas-title h2{
+        font-size: 55px;
+    }
+    .juegos-title h2{
+        font-size: 50px;
+    }
+    .swiper-slide-juegos h3 {
+        width: 100%;
+    }
+    .swiper-slide-juegos p {
+        width: 85%;
+    }
+}
