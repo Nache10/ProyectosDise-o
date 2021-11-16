@@ -1,0 +1,352 @@
+.titulo {
+    position: absolute;
+    z-index: 10;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 428%;
+    text-transform: uppercase;
+    text-shadow: 3px 2px 3px black;
+    margin: 0;
+}
+.mi1,.mi3,.mi5{
+    padding-bottom: 36%;
+}
+.mi2,.mi4{
+    padding-bottom: 30% ;
+}
+.mi1{
+    background-image: url(../img/mosbio1.jpg);
+}
+.mi2{
+    background-image: url(../img/mosbio2.jpg);
+}
+.mi3{
+    background-image: url(../img/mosbio3.jpg);
+}
+.mi4{
+    background-image: url(../img/mosbio4.jpg);
+}
+.mi5{
+    background-image: url(../img/mosbio5.jpg);
+}
+/*INICIO INTRO*/
+.intro{
+    padding-top: 50px;
+}
+.intro-bg{
+    display: none   ;
+}
+/*FIN INTRO*/
+/*INICIO TIMELINE*/
+.timeline{
+    width: 100%;
+    padding: 50px 0px;
+    height: auto;
+}
+.timeline-wraper{
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.timeline-wraper>*{
+    width: 33%;
+    height: 400px;
+}
+
+.timeline-linea{
+    width: 4%;
+    display: flex;
+    background-color: #f3557B;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.timeline-title{
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 200px;
+    margin: 0;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 155%;
+    text-shadow: 3px 2px 3px black;
+}
+.rev{
+    transform: rotate(90deg);
+}
+.extra{
+    margin-left: 6%;
+}
+.timeline-content{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: .6s;
+}
+.timeline-content-wraper{
+    background-color: rgba(0, 0, 0, .4);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: .6s;
+}
+.timeline-content-wraper p{
+    text-shadow: 3px 2px 3px black;
+}
+.timeline-content h2{
+    transition: .6s;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 200%;
+    text-shadow: 3px 2px 3px black;
+    margin: 0;
+}
+.timeline-hueco{
+    width: 40%;
+}
+.tc1{
+    background-image: url(../img/aw1.jpg);
+}
+.tc2{
+    background-image: url(../img/aw2.jpg);
+}
+.tc3{
+    background-image: url(../img/aw3.jpg);
+}
+.tc4{
+    background-image: url(../img/aw4.jpg);
+}
+.tc5{
+    background-image: url(../img/aw5.jpg);
+}
+.tc6{
+    background-image: url(../img/aw6.jpg);
+}
+.time-boton{
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 160%;
+    text-shadow: 3px 2px 3xp black;
+    position: relative;
+}
+.time-boton::before{
+    position: absolute;
+    content: '';
+    width: 25%;
+    height: 1px;
+    background-color: #ebeff0;
+    top: 20px;
+    left: 0;
+    margin-left: -30px;
+    transition: 1s;
+}
+.time-boton:hover::before{
+    cursor: pointer;
+    margin: 0;
+    width: 100%;
+}
+/*FIN TIMELINE*/
+.lightbox{
+    width: 0%;
+    height: 0%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 0px;
+    transition: .8s;
+    background:transparent ;
+}
+.light-img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.lightboxanim{
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+}
+.navanim{
+    display: none;
+}
+.close{
+    display: none;
+}
+@media all and (max-width:1150px){
+    .close{
+        opacity: 1;
+    }
+    .timeline-hueco{
+        width:20%;
+    }
+    .timeline-content{
+        width: 70%;
+    }
+}
+@media all and (max-width:900px){
+    .timeline-hueco{
+        width:0%;
+    }
+    .timeline-content{
+        width: 94%;
+        margin-bottom: 50px;
+    }
+    .extra{
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    .timeline-linea{
+        width: 6%;
+    }
+    .close{
+        opacity: 1;
+    }
+}
+
+.mosaicofooter{
+    height: auto;
+    width: 100%;
+    padding-top: 100px;
+}
+.mosaicofooter-wraper{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+}
+.mosaicofooter-item{
+    height: 100%;
+    width: 16.66%;
+    box-sizing: border-box;
+    /* border: 1px solid #ebeff0; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: .3s;
+}
+.mosaicofooter-item:hover{
+    cursor: pointer;
+    filter: brightness(110%) saturate(125%);
+    transform: scale(1.005);
+}
+.mf1{
+    background-image: url(../img/g3.jpg);
+}
+.mf2{
+    background-image: url(../img/g5.jpg);
+}
+.mf3{
+    background-image: url(../img/g9.jpg);
+}
+.mf4{
+    background-image: url(../img/g2.jpg);
+}
+.mf5{
+    background-image: url(../img/g8.jpg);
+}
+.mf6{
+    background-image: url(../img/g10.jpg);
+}
+@media all and (max-width:1170px){
+    .mosaicofooter-item{
+        width: 33.33%;
+    }
+    .mf2,.mf4,.mf5{
+        display: none;
+    }
+    .form-contenido{
+        width: 100%;
+    }
+    .form-form{
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+        border-left: 2px solid #ebeff0;
+        border-top: 2px solid #ebeff0;
+    }
+    
+}
+@media all and (max-width:1000px){
+    .mi1,.mi5{
+        padding-bottom: 30%;
+    }
+}
+@media all and (max-width:850px){
+    .lightboxanim {
+        padding: 0px;
+    }
+    .timeline-content{
+        padding: 0px !important;
+    }
+    .timeline-content h2{
+        color: #f3557B !important;
+    }
+    .time-boton::before {
+        margin: 0;
+        width: 100%;
+        background-color: #f3557B;
+    }
+}
+@media all and (max-width:650px){
+    .mi1{
+        padding-bottom: 0%;
+    }
+    .titulo {
+            font-size: 300%;
+    }
+    .mosaicofooter {
+        padding-top: 0px;
+    }
+}
+@media all and (max-width:600px){
+    .mosaicofooter-wraper{
+        height: 200px;
+    }
+    .form-contenido{
+        height: 600px;
+    }
+    .form-wraper{
+        padding-top: 100px;
+    }
+    .mosaicofooter{
+        padding: 0;
+    }
+    .timeline{
+        padding: 0;
+    }
+}
+.mosaicofooter-instagram{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.mosaicofooter-title{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 300%;
+    text-shadow: 3px 2px 3px black;
+    margin: 0;
+    margin-bottom: 30px ;
+    padding: 0;
+}
