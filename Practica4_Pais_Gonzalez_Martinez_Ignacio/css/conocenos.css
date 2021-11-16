@@ -1,0 +1,486 @@
+header{
+    background-image: url(../img/conocenos/back.jpg);
+}
+.list-nav li:nth-child(1){
+    text-shadow: none;
+  }
+  .list-nav li:nth-child(2){
+    text-shadow: 2px 2px 2px black;
+  }
+/* INICIO GASTRONOMIA */
+.comer{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.undia-title{
+    margin-bottom: 80px;
+    width: 498px;
+}
+.comer-wrapper{
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.comer-platos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.comer-plato{
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+}
+.comer-plato-foto{
+    width: 50%;
+    height: 400px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.comer-plato-content{
+    padding: 20px;
+    width: 50%;
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.comer-plato-content p{
+    width: 100%;
+    text-align: justify;
+}
+.cpf1{
+    background-image: url(../img/conocenos/platos/Tourtiere.jpg);
+}
+.cpf2{
+    background-image: url(../img/conocenos/platos/fiddleheads.jpg);
+}
+.cpf3{
+    background-image: url(../img/conocenos/platos/smoked_meat.jpg);
+}
+.cpf4{
+    background-image: url(../img/conocenos/platos/trempettes.jpg);
+}
+/* FIN GASTRONOMIA */
+/* MEDIAS GASTRONOMIA */
+@media all and (max-width:1300px){
+    .comer-plato{
+        width: 100%;
+    }
+    .cm1{
+        order: 1;
+    }
+    .cm2{
+        order: 3;
+    }
+    .cm3{
+        order: 2;
+    }
+    .cm4{
+        order: 4;
+    }
+}
+@media all and (max-width:950px){
+    .undia-title{
+        width: 341px;
+    }
+}
+@media all and (max-width:850px){
+    .comer{
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    .undia-title{
+        margin-bottom: 40px;
+    }
+    .comer-plato{
+        flex-wrap: wrap;
+    }
+    .comer-plato-foto{
+        width: 100%;
+        height: 300px;
+        order: 1;
+    }
+    .comer-plato-content{
+        width: 100%;
+        height: 300px;
+        order: 2;
+    }
+}
+/* FIN MEDIAS GASTRONOMIA*/
+/* INICIO PLAYA Y MONTAÑA */
+.playa-monte{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0;
+}
+.playa-monte-wrapper{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+.playa-monte-content{
+    width: 90%;
+    display: flex;
+    margin-bottom: 20px;
+}
+.playa-monte-content p{
+    width: 50%;
+    text-align: justify;
+    padding: 30px;
+}
+.playa-monte-pics{
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.playa-monte-pic{
+    width: 20%;
+    padding-bottom: 20%;
+    box-sizing: border-box;
+    /* border: 1px solid  black; */
+    box-shadow: 2px 2px 6px black;
+    border-radius: 50%;
+    transition: .6s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.playa-monte-pic:hover{
+    cursor: pointer;
+}
+.playa-monte-pic:nth-child(3){
+    transform: scale(1.4);
+    z-index: 4;
+}
+.playa-monte-pic:nth-child(3):hover{
+    transform: scale(1.5);
+}
+.playa-monte-pic:nth-child(2),.playa-monte-pic:nth-child(4){
+    transform: scale(1.2);
+    z-index: 3;
+}
+.playa-monte-pic:nth-child(2):hover,.playa-monte-pic:nth-child(4):hover{
+    transform: scale(1.3);
+}
+.playa-monte-pic:nth-child(1),.playa-monte-pic:nth-child(5){
+    z-index: 2;
+}
+.playa-monte-pic:nth-child(1):hover,.playa-monte-pic:nth-child(5):hover{
+    transform: scale(1.1);
+}
+.playa-monte-pic:nth-child(1){
+    background-image: url('../img/conocenos/montplaya/mont1.jpg');
+}
+.playa-monte-pic:nth-child(2){
+    background-image: url('../img/conocenos/montplaya/mont2.jpg');
+}
+.playa-monte-pic:nth-child(3){
+    background-image: url('../img/conocenos/montplaya/mid.jpg');
+}
+.playa-monte-pic:nth-child(4){
+    background-image: url('../img/conocenos/montplaya/pla1.jpg');
+}
+.playa-monte-pic:nth-child(5){
+    background-image: url('../img/conocenos/montplaya/pla2.jpg');
+}
+/* FIN PLAYA Y MONTAÑA */
+/* MEDIAS PLAYA Y MONTAÑA */
+@media all and (max-width:1300px){
+    .playa-monte-wrapper h2{
+        font-size: 300%;
+    }
+    .playa-monte-pics{
+        justify-content: center;
+    }
+    .playa-monte-pic:nth-child(1),.playa-monte-pic:nth-child(5){
+        display: none;
+    }
+    .playa-monte-pic{
+        width: 25%;
+        padding-bottom: 25%;
+    }
+}
+@media all and (max-width:1000px){
+    .playa-monte-wrapper h2{
+        font-size: 250%;
+    }
+    .playa-monte p:nth-child(1){
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .playa-monte p:nth-child(2){
+        display: none;
+    }
+}
+@media all and (max-width:850px){
+    .playa-monte-wrapper h2{
+        font-size: 200%;
+    }
+    .playa-monte p:nth-child(1){
+        width: 100%;
+    }
+    .playa-monte-pic:nth-child(2),.playa-monte-pic:nth-child(4){
+        display: none;
+    }
+    .playa-monte-pic:nth-child(3){
+        border-radius: 0%;
+        width: 80%;
+    }
+    
+}
+/* FIN MEDIAS PLAYA Y MONTAÑA*/
+/* INICIO CULTURA */
+.cultura{
+    width: 100%;
+    height: 400px;
+    box-shadow: 10px 8px 10px #b61c24;
+}
+.swiper{
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+.swiper-slide p{
+    width: 50%;
+}
+.swiper-slide:hover{
+    cursor: grab;
+}
+.swiper-slide:active{
+    cursor: grabbing;
+}
+.ss1{
+  background-image: url('../img/conocenos/religion.jpg');
+}
+.ss2{
+  background-image: url('../img/conocenos/politica.jpg');
+}
+.ss3{
+    background-image: url('../img/conocenos/arte.jpg');}
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+.swiper-button-next:after {
+    margin-right: 50px;
+}
+.swiper-button-prev:after{
+    margin-left: 50px;
+}
+
+/* FIN CULTURA*/
+/* INICIO MEDIAS CULTURA */
+@media all and (max-width:850px){
+    .swiper-slide p{
+       font-size: 80%;
+    }
+}
+/* FIN MEDIAS CULTURA */
+/* INICIO SPORTS */
+.sports{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .sports-wrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .sports-col1{
+    margin-right: 20px;
+    width: 30%;
+    height: 600px;
+    box-sizing: border-box;
+    background-image: url('../img/conocenos/sports/sp2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .sports-col-main{
+    width: 50%;
+    height: 600px;
+    box-sizing: border-box;
+  }
+  .sports-col-aside{
+    width: 20%;
+    height: 600px;
+    box-sizing: border-box;
+  }
+  .sports-col-main-pic{
+      width: 100%;
+      height: 250px;
+      background-image: url('../img/conocenos/sports/sp1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 200%;
+  }
+  .sports-col-main-content{
+      width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+      font-size: 85%;
+      text-align: justify;
+  }
+  .sport{
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      display: flex;
+      transition: .3s;
+  }
+  .sport:hover{
+      cursor: pointer;
+      transform: scale(1.1);
+  }
+  .sport-pic{
+      width: 70px;
+      height: 70px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      box-sizing: border-box;
+      border: 1px solid black;
+  }
+  .sport-content{
+      height: 70px;
+      flex: 1;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 120%;
+  }
+  .cambiodeporte{
+    text-shadow: 2px 2px 2px black;
+
+  }
+  .spic1{
+    background-image: url('../img/conocenos/sports/curling.jpg');
+  }
+  .spic2{
+    background-image: url('../img/conocenos/sports/hockey2.jpg');
+  }
+  .spic3{
+    background-image: url('../img/conocenos/sports/lacrosse2.jpg');
+  }
+  .spic4{
+    background-image: url('../img/conocenos/sports/sp2.jpg');
+  }
+  .spic5{
+    background-image: url('../img/conocenos/sports/volley.jpg');
+  }
+  .spic6{
+    background-image: url('../img/conocenos/sports/ski2.jpg');
+  }
+
+/* FIN SPORTS */
+/* INICIO MEDIAS SPORTS */
+@media all and (max-width:1300px){
+    .sports-wrapper{
+        width: 90%;
+    }
+    .sports-col1{
+        display: none;
+    }
+    .sports-col-main{
+        width: 75%;
+    }
+    .sports-col-aside{
+        width: 25%;
+    }
+}
+@media all and (max-width:950px){
+    .sports-wrapper{
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .sports-col-main{
+        width: 100%;
+        order: 2;
+    }
+    .sports-col-aside{
+        order: 1;
+        width: 100%;
+        display: flex;
+        height: auto;
+    }
+    .sport{
+        padding: 0px;
+    }
+    .sport-pic{
+        display: none;
+    }
+    .sport-content{
+        justify-content: flex-start;
+    }
+    .sport-content h5{
+        text-decoration: underline;
+    }
+    .sports-col-main-content {
+        padding: 0;
+        padding-top: 15px;
+    }
+
+}
+@media all and (max-width:650px){
+    .sports-wrapper{
+        width: 100%;
+    }
+    .sports-col-main-content {
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-top: 15px;
+    }
+    .sport-content{
+        font-size: 90%;
+    }
+}
+/* FIN MEDIAS SPORTS */

@@ -1,0 +1,886 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC:400,500,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@font-face{
+  font-family:'Garage Gothic';
+  src: url(../fonts/Garage\ Gothic\ Regular.otf);
+}
+/*Sobreescritura de "user agents" para mi practica*/
+html,
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Muli;
+    color: black;
+    scroll-behavior: smooth;
+}
+section{
+  width: 100%;
+  height: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Alegreya SC';
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-size: 550%;
+}
+h2{
+  font-size: 350%;
+  line-height: 35px;
+}
+h3{
+  font-size: 250%;
+}
+h4{
+  font-size: 150%;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  font-family: 'Garage Gothic';
+  font-size: 200%;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+a{
+  color: #b61c24;
+  text-decoration: none;
+  font-weight: 500;
+  font-size:110%;
+  font-family: 'Alegreya SC';
+
+}
+a:hover{
+  text-decoration: underline;
+}
+nav{
+  color: white;
+  border-bottom: 1px solid black;
+}
+/*Fin de "user agents"*/
+/*SCROLLBAR DESIGN*/
+::-webkit-scrollbar-track{
+  background:white;
+}
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background: #b61c24;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #6e0c11;
+}
+/* FIN SCROLLBAR DESIGN*/
+/* BARRA DE NAV */
+nav{
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #b61c24;
+  transition: .6s .2s;
+  z-index: 99;
+}
+.esconder{
+  transform: translateY(-110%);
+}
+.aparecer{
+  transform: translateY(0%);
+}
+.realnav{
+  margin-top: 8px !important;
+}
+/* FIN BARRA DE NAV*/
+/* INICIO DE HEADER */
+header{
+  width: 100%;
+  height: 54%;
+  background-image: url('../img/index/pantallazo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  color: white;
+}
+.header-menu{
+  width: 100%;
+  height: 15%;
+  box-sizing: border-box;
+}
+.header-menu-wrapper{
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+.header-menu-logo{
+  min-width: 220px;
+  width: 220px;
+  max-width: 220px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-menu-logo:hover{
+  cursor: pointer;
+}
+.header-menu-logo-colocar{
+  width: 90%;
+  height: 90%;
+  background-image: url('../img/index/logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 20px;
+}
+.header-menu-logo-colocar:hover{
+  cursor: pointer;
+}
+.header-menu-nav{
+  flex:1;
+  height: 100%;
+}
+.list-nav{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.list-nav li{
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+.list-nav li:nth-child(1){
+  text-shadow: 2px 2px 2px black;
+}
+
+.header-texto{
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+  padding-left:100px;
+  text-shadow: 2px 2px 2px black;
+}
+.header-texto-wrapper{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.header-texto h1{
+  font-family: 'Garage gothic';
+  color: white;
+  font-size: 800%;
+  font-weight: 500;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  text-decoration: underline;
+}
+/* FIN DE HEADER */
+/* INICIO MEDIAS HEADER */
+@media all and (max-width:1000px){
+  header{
+    height: 40%;
+  }
+  .header-texto h1{
+    font-size: 600%;
+  }
+  .list-nav li{
+    font-size: 180%;
+    margin-left: 20px;
+  }
+}
+@media all and (max-width:850px){
+  .header-texto{
+    padding-left: 30px;
+  }
+  .header-texto h1{
+    font-size: 400%;
+  }
+  .header-texto-wrapper, .header-menu-wrapper{
+    width: 100%;
+  }
+  .header-menu-logo-colocar{
+    height: 100%;
+  }
+  .list-nav li:nth-child(4){
+    padding-right: 30px;
+  }
+  .list-nav li{
+    font-size: 150%;
+    margin-left: 10px;
+  }
+}
+
+/* FIN MEDIAS HEADER */
+/* INICIO DE UNDIA */
+.undia{
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: auto;
+  background-image: url('../img/index/fondogalleria.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.undia-wrapper{
+  width: 100%;
+}
+.undia-title{
+  width: 570px;
+  margin: auto;
+  text-align: center;
+}
+.undia-sub{
+  text-align: left;
+  text-transform: uppercase;
+}
+.undia-sub2{
+  text-align: right;
+  text-transform: uppercase;
+}
+.undia-gallery{
+  width: 100%;
+  display: flex;
+}
+.undia-gallery-col{
+  width: 25%;
+  height: 100%;
+  padding:20px
+}
+.undia-gallery-col-pic{
+  width: 100%;
+  padding-bottom: 100%;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid black;
+  transition: .3s;
+  display: flex;
+  justify-content: center;
+}
+.undia-gallery-col-pic h3{
+  color: white; 
+  text-shadow: 2px 2px 2px black;
+  height: 0;
+}
+.undia-gallery-col-pic:hover{
+  cursor: pointer;
+}
+.undia-pic1{
+  background-image: url('../img/index/ciudades/ciu1.jpg');
+  margin-top: 500px;
+  box-sizing: border-box;
+}
+.undia-pic1:hover{
+  background-image: url('../img/index/ciudades/ciu1h.jpg');
+}
+.undia-pic2{
+  background-image: url('../img/index/ciudades/ciu2.jpg');
+  margin-top: 263px;
+}
+.undia-pic2:hover{
+  background-image: url('../img/index/ciudades/ciu2h.jpg');
+}
+.undia-pic3{
+  background-image: url('../img/index/ciudades/ciu3.jpg');
+}
+.undia-pic3:hover{
+  background-image: url('../img/index/ciudades/ciu3h.jpg');
+}
+.undia-pic4{
+  background-image: url('../img/index/ciudades/ciu4.jpg');
+  margin-top: 30px;
+}
+.undia-pic4:hover{
+  background-image: url('../img/index/ciudades/ciu4h.jpg');
+}
+.undia-pic5{
+  background-image: url('../img/index/ciudades/ciu5.jpg');
+}
+.undia-pic5:hover{
+  background-image: url('../img/index/ciudades/ciu5h.jpg');
+}
+.undia-pic6{
+  background-image: url('../img/index/ciudades/ciu6.jpg');
+  margin-top: 263px;
+}
+.undia-pic6:hover{
+  background-image: url('../img/index/ciudades/ciu6h.jpg');
+}
+
+/* FIN DE UNDIA */
+/* MEDIAS DE UNDIA */
+@media all and (max-width:1350px){
+  .undia-pic1{
+    margin-top: 345px;
+  }
+  .undia-pic2{
+    margin-top: 165px;
+  }
+  .undia-pic4{
+    margin-top: 30px;
+  }
+  .undia-pic6{
+    margin-top: 165px;
+  }
+  .undia-gallery-col{
+    padding:10px
+  }
+  .undia-gallery-col-pic{
+    margin-bottom: 20px;
+  }
+}
+@media all and (max-width:950px){
+  .undia-pic1{
+    margin-top: 110px;
+  }
+  .undia-pic2{
+    margin-top: 0px;
+  }
+  .undia-pic4{
+    margin-top: 0px;
+  }
+  .undia-pic6{
+    margin-top: 110px;
+  }
+  .undia-title{
+    width: 392px;
+    margin-bottom: 20px;
+  }
+  .undia-title h2{
+    font-size:240%;
+  }
+  .undia-title h4{
+    font-size:120%;
+  }
+}
+@media all and (max-width:850px){
+  .undia-wrapper{
+    width: 90%;
+    margin: auto;
+  }
+  .undia-gallery-col-pic{
+    margin: 0;
+  }
+  .undia-pic1{
+    margin-top: 0px;
+  }
+  .undia-pic2{
+    margin-left: 10px ;
+    margin-bottom: 10px;
+  }
+  .undia-pic4{
+    margin-right: 10px;
+  }
+  .undia-pic6{
+    margin-left: 10px;
+  }
+  .undia-pic3, .undia-pic5{
+    display: none;
+  }
+  .undia-gallery{
+    flex-wrap: wrap;
+  }
+  .undia-gallery-col{
+    width: 50%;
+  }
+  .undia-gallery-col{
+    padding: 0px;
+  }  
+}
+@media all and (max-width:600px){
+  .undia-gallery-col{
+    width: 100%;
+  }
+  .undia-gallery-col-pic{
+    padding-bottom: 0px;
+    height: 200px;
+  }
+  .undia-gallery-col-pic{
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+/* FIN MEDIAS DE UNDIA*/
+/* INICIO SECCION SOBRE LA MARCHA */
+.marcha{
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.marcha-wrapper{
+  width: 80%;
+  margin: auto;
+  height: 300px;
+  display: flex;
+  background-image: url('../img/index/back-section.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  padding: 50px;
+  /* border: 1px solid black; */
+  /* border-bottom: 6px solid #b61c24; */
+}
+.marcha-foto{
+  margin-left: 150px;
+  width: 300px;
+  padding-bottom: 300px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-image: url('../img/index/curiosidades/cur1.jpg');
+  border: 1px solid black;
+  
+}
+.marcha-content{
+  text-shadow: 2px 2px 2px black;
+  flex:1;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.marcha-content h3{
+  height: 20px;
+  line-height: 20px;
+}
+.marcha-content p{
+  text-align: justify;
+  width: 80%;
+}
+
+/* FIN SOBRE LA MARCHA */
+/* INICIO MEDIAS MARCHA */
+@media all and (max-width:1300px){
+  .marcha-wrapper{
+    width: 100%;
+  }
+  .marcha-foto{
+    margin-left: 100px;
+  }
+  .marcha-content h3{
+    padding-top: 20px;
+    height: auto;
+    line-height: auto;
+  }
+}
+@media all and (max-width:1000px){
+
+  .marcha-wrapper{
+    height: auto;
+    flex-wrap: wrap;
+    background-size: cover;
+  }
+  .marcha-content{
+    padding-left: 0px;
+  }
+  .marcha-content p{
+    width: 100%;
+  }
+  .marcha-foto{
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+@media all and (max-width:650px){
+
+  .marcha-content h3{
+    font-size: 200%;
+  }
+}
+@media all and (max-width:550px){
+  .marcha-content h3{
+    line-height: 30px;
+  }
+}
+/* FIN MEDIAS MARCHA*/
+/* INICIO TOP TEN*/
+.topten{
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: auto;
+  background-image: url('../img/index/prueba.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.topten-wrapper{
+  width: 100%;
+}
+.topten-title{
+  width: 584px;
+  margin: auto;
+  text-align: center;
+}
+.topten-sub{
+  text-align: left;
+  text-transform: uppercase;
+}
+.topten-sub2{
+  text-align: right;
+  text-transform: uppercase;
+}
+.topten-posts{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.topten-post{
+  box-sizing: border-box;
+  width: 33%;
+  padding: 50px;
+  text-align:center;
+}
+.topten-post-pic{
+  width: 100%;
+  height: 250px;
+  position: relative;
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid black;
+  border-bottom: 6px solid #b61c24;
+}
+.topten-post-pic:hover{
+  cursor: pointer;
+}
+.post-pic1{
+  background-image: url('../img/index/top6/top1.jpg');
+}
+.post-pic2{
+  background-image: url('../img/index/top6/top2.jpg');
+} 
+.post-pic3{
+  background-image: url('../img/index/top6/top3.jpg');
+} 
+.post-pic4{
+  background-image: url('../img/index/top6/top4.jpg');
+} 
+.post-pic5{
+  background-image: url('../img/index/top6/top5.jpg');
+} 
+.post-pic6{
+  background-image: url('../img/index/top6/top6.jpg');
+} 
+
+.topten-post-pic h4{
+  position: absolute;
+  font-size: 120%;
+  border: 1px solid white;
+  color: white;
+  background-color: rgba(0,0,0,.5);
+  border-radius: 1px;
+  padding: 5px;
+}
+
+.topten-post-title{
+  width: 100%;
+  text-align: center;
+}
+.topten-post-content{
+  text-align: justify;
+}
+.topten-post-button{
+  font-family: 'Garage Gothic';
+  font-size: 200%;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-bottom: 3px solid #b61c24;
+  transition: .1s;
+}
+.topten-post-button:hover{
+  cursor: pointer;
+  color: #b61c24;
+}
+/* FIN TOP TEN*/
+/* MEDIAS PARA TOP TEN */
+@media all and (max-width:1300px){
+  .topten-post{
+    width: 50%;
+  }
+}
+@media all and (max-width:950px){
+  .topten-title{
+    width: 398px;
+    margin-bottom: 20px;
+  }
+  .topten-title h2{
+    font-size:240%;
+  }
+  .topten-title h4{
+    font-size:120%;
+  }
+}
+@media all and (max-width:850px){
+  .topten-post{
+    width: 100%;
+  }
+}
+/* FIN MEDIAS PARA TOP TEN */
+/* REDES */
+.redes{
+  width: 100%;
+  margin-top: 50px;
+  padding: 0;
+  box-sizing: border-box;
+  height: auto;
+}
+.redes-wrapper{
+  width: 1250px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.redes-info{
+  text-shadow: 2px 2px 2px black;
+  min-width: 250px;
+  width: 250px;
+  height: 500px;
+  background-color: #b61c24;
+  box-sizing: border-box;
+  border: 10px solid white;
+  display: flex;
+  color: white;
+}
+.redes-info-wrapper{
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.redes-info-wrapper>*{
+  width: 100%;
+}
+.redes-info-wrapper h5{
+  text-align: center;
+  font-size: 110%;
+  height: 0px;
+  margin-top: 30px;
+}
+.infoinsta h5{
+  text-align: center;
+  font-size: 110%;
+  height: 0px;
+  margin-top: 10px;
+}
+.infoinsta{
+  height: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hr{
+  display: flex;
+}
+.cajonredes{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 0px;
+}
+.redes-pics{
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.redes-pic{
+  box-sizing: border-box;
+  border: 10px solid white;
+  min-width: 250px;
+  width: 250px;
+  max-width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  transition: .3s;
+}
+.relleno{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: .4s;
+  text-shadow: 2px 2px 2px black;
+
+}
+.redes-pic:hover{
+  cursor: pointer;
+}
+.pic1{
+  background-image: url('../img/index/instagram/ins1.jpg');
+}
+.pic1h{
+  background-image: url('../img/index/instagram/ins1h.jpg');
+}
+.pic2{
+  background-image: url('../img/index/instagram/ins2.jpg');
+}
+.pic2h{
+  background-image: url('../img/index/instagram/ins2h.jpg');
+}
+.pic3{
+  background-image: url('../img/index/instagram/ins3.jpg');
+}
+.pic3h{
+  background-image: url('../img/index/instagram/ins3h.jpg');
+}
+.pic4{
+  background-image: url('../img/index/instagram/ins4.jpg');
+}
+.pic4h{
+  background-image: url('../img/index/instagram/ins4h.jpg');
+}
+.pic5{
+  background-image: url('../img/index/instagram/ins5.jpg');
+}
+.pic5h{
+  background-image: url('../img/index/instagram/ins5h.jpg');
+}
+.pic6{
+  background-image: url('../img/index/instagram/ins6.jpg');
+}
+.pic6h{
+  background-image: url('../img/index/instagram/ins6h.jpg');
+}
+.pic7{
+  background-image: url('../img/index/instagram/ins7.jpg');
+}
+.pic7h{
+  background-image: url('../img/index/instagram/ins7h.jpg');
+}
+.pic8{
+  background-image: url('../img/index/instagram/ins8.jpg');
+}
+.pic8h{
+  background-image: url('../img/index/instagram/ins8h.jpg');
+}
+/* FIN REDES */
+/* MEDIAS REDES*/
+@media all and (max-width:1300px){
+  .redes-wrapper{
+    flex-wrap: wrap;
+    width: auto;
+  }
+  .redes-info{
+    width: 1000px;
+    height: 250px;
+  }
+  .cajonredes{
+    margin-top:26px;
+    width: 50%;
+  }
+  .redes-info-wrapper hr{
+    margin-top: 32px;
+  }
+  .redes-info-wrapper h5{
+    margin-top: 0px;
+  }
+}
+@media all and (max-width:1010px){
+  .pic4, .pic8{
+    display: none;
+  }
+  .redes-pics{
+    justify-content: center;
+  }
+  .redes-info{
+    width: 750px;
+  }
+}
+@media all and (max-width:850px){
+  .pic5, .pic6, .pic7{
+    display: none;
+  }
+  .redes-info{
+    width: 100%;
+  }
+  .redes-pic{
+    min-width: 33%;
+    width: 33%;
+    max-width: 33%;
+  }
+}
+@media all and (max-width:650px){
+  .redes-pic{
+    height: 200px;
+  }
+}
+@media all and (max-width:550px){
+  .pic3{
+    display: none;
+  }
+  .redes-pic{
+    min-width: 50%;
+    width: 50%;
+    max-width: 50%;
+  }
+}
+/* FIN MEDIAS REDES*/
+/* INICIO DE FOOTER */
+footer{
+  width: 100%;
+  height: 400px;
+  background-image: url('../img/index/footer.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+.copy-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.copy-wrapper small{
+  padding-bottom: 30px;
+}
+/* FIN DE FOOTER */
+@media all and (max-width:750px){
+  footer{
+    background-image: url('../img/index/footer2.png');
+  }
+}
+
+/*redirects*/
+.inicio:hover,.conocenos:hover,.rutas:hover,.contacto:hover{
+  cursor: pointer;
+}

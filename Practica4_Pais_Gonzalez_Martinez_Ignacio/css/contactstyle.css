@@ -1,0 +1,102 @@
+.list-nav li:nth-child(1){
+  text-shadow: none;
+}
+.list-nav li:nth-child(4){
+  text-shadow: 2px 2px 2px black;
+}
+/* MODIFICACION HEADER*/
+header{
+  height: 45%;
+  background-image: url('../img/contact/back.jpg');
+  background-position: center left;
+}
+.header-menu-logo-colocar {
+  margin-top: 0px;
+}
+.header-texto{
+  box-sizing: border-box;
+  width: 100%;
+  height: 85%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-shadow: none;
+}
+.header-form-wrapper{
+  width:50%;
+  height: 670px;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.header-form{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+::placeholder{
+  color: black;
+}
+input, textarea{
+  padding: 10px;
+  background-color: transparent;
+  font-family: Muli;
+  color: black;
+  border: 1px solid black;
+  /* border-bottom: 3px solid #b61c24; */
+  width: 100%;
+  outline: none;
+  transition: .3s;
+  margin-top: 20px;
+}
+.enviar{
+  cursor: pointer;
+}
+.enviar:hover{
+  background-color: black;
+  color: white;
+  font-size: 110%;
+  font-weight: 300;
+}
+/* FIN MODIFICACION HEADER*/
+
+@media all and (max-width:1300px){
+  .header-form-wrapper{
+    width:70%;
+  }
+}
+@media all and (max-width:1000px){
+  .header-form-wrapper{
+    width:80%;
+  }
+  .header-form-wrapper h2{
+    font-size: 300%;
+  }
+}
+
+@media all and (max-width:850px){
+  .header-form-wrapper{
+    width:90%;
+  }
+  .header-form-wrapper h2{
+    font-size: 220%;
+  }
+}
+
+
+/*apaños*/
+.header-form-wrapper{
+  margin-top: 550px;
+}
+.redes{
+  margin-top: 500px;
+}
